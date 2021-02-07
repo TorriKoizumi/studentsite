@@ -4,8 +4,8 @@ body { margin: 0;}
 
 /* Global Colors */
 body {color:rgba(0,0,0,0.8)}
-a {color:rgba(202, 0, 0, 0.8)}
-a:hover {color:rgba(202, 0, 0, 1)}
+a {color:#909f93}
+a:hover {color:rgb(252, 113, 113)}
 
 /* GLOBAL TYPEOGRAPHY */
 body{ 
@@ -14,9 +14,22 @@ body{
     line-height: 1.4;
 }
 
+ /* CUSTOM HOME PAGE STYLEING */
+ .page-home header {
+    position: absolute;
+    width: 100%;
+    background-color: #39353267;
+    color: white;
+}
+.page-home .hero {
+    background-image: url(https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1947&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
 /* Header */
 header {
-    background-color: rgba(0,102,204,1);
+    background-color:#adbbaf; 
     color: rgba(0,0,0,0.8);
     padding: 1em;
     display: grid;
@@ -25,13 +38,13 @@ header {
 }
 
 header a { 
-    color: rgba(0,0,0,0.8);
+    color: white;
     text-decoration:none;
 
 }
 
 header a:hover {
-    color: rgba(255,255,255,1) 
+    color: rgb(252, 113, 113) 
 }
 
 /* SITE ID */
@@ -79,10 +92,11 @@ footer {
 
 /* Hero Section */
 .hero {
-    background-color: rgba(0,102,204,1);
+    background-color: rgba(0,102,204,0);
     text-align: center;
     color: white;
     padding: 6em 1em;
+    padding: 10em;
 }
 
 .hero h2 {
