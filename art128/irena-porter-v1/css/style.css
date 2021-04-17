@@ -104,6 +104,10 @@ img{
     height: auto;
 }
 
+.trophy-icon{
+    max-width: 36%;
+}
+
 /* BUTTONS */
 
 .button, button, form input[type="submit"] {
@@ -150,7 +154,7 @@ body{ margin: 0;}
 
 /* CONTAINER */
 .container {
-    max-width: 1000px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -171,7 +175,7 @@ body{ margin: 0;}
         font-size: 112.5%;
     }
     .container {
-        max-width: 1200px;
+        /* max-width: 1200px; */
     }
 }
 
@@ -260,7 +264,7 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    padding: 1em 0;
+    padding: 17.5px 0;
     background-color: #E6E6E9;
 }
 
@@ -300,6 +304,7 @@ body.demo::before {
     list-style: none;
     display: flex;
     justify-content: center;
+    font-size: 1em;
 }
 
 .site-nav li{
@@ -485,4 +490,65 @@ form input[type="submit"] {
 
 #contact {
     background-color: #519872;
+}
+
+/* hero grid */
+.grid-hero {
+    position: relative;
+    padding: 3em 0;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-hero .big-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.grid-hero .small-header {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin: 0;
+}
+
+.grid-hero .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* Testimonials */
+
+.tullia-test {
+    color: red;
+    display: flexbox;
+}
+
+.adam-test {
+    color: blue;
+    display: flexbox;
+}
+
+.thoko-test {
+    color: green;
+    display: flexbox;
+}
+
+/* ABOUT */
+
+#about .container {
+    justify-content: space-between;
+    color: red;
+    display: flex;
+    align-self: flex-start;
+    &about-image {
+        display: flex;
+    }
 }
