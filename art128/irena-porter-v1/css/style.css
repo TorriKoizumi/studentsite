@@ -110,7 +110,9 @@ img{
 
 /* BUTTONS */
 
-.button, button, form input[type="submit"] {
+.button,
+ button, 
+ form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
     background-color: #519872;
@@ -124,7 +126,9 @@ img{
     transition: ease-out 0.3s;
 }
 
-.button:hover, button:hover, form input[type="submit"]:hover{
+.button:hover, 
+button:hover, 
+form input[type="submit"]:hover{
     background-color: #F4F4F6;
     border-color: #519872;
     color: #519872;
@@ -133,14 +137,16 @@ img{
 
 }
 
-.button-alt {
+.button-alt,
+form input[type="submit"].button-alt {
     color: #519872;
     background-color: #F4F4F6;
     border: 1px solid #519872;
     transition: ease-out 0.3s;
 }
 
-.button-alt:hover {
+.button-alt:hover,
+form input[type="submit"].button-alt:hover {
     background-color: #519872;
     color: #F4F4F6;
 
@@ -154,7 +160,7 @@ body{ margin: 0;}
 
 /* CONTAINER */
 .container {
-    max-width: 2000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -250,6 +256,7 @@ body.demo::before {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 /* FOR DEMO PURPOSES ONLY */
@@ -526,29 +533,30 @@ form input[type="submit"] {
 
 /* Testimonials */
 
-.tullia-test {
-    color: red;
-    display: flexbox;
-}
+.circle-box{
+    background: #E6E6E9;
+    border-radius: 100%;
+    width: 15em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
 
-.adam-test {
-    color: blue;
-    display: flexbox;
-}
-
-.thoko-test {
-    color: green;
-    display: flexbox;
 }
 
 /* ABOUT */
 
-#about .container {
+/* BESPOKE */
+/* #about .container {
     justify-content: space-between;
-    color: red;
     display: flex;
     align-self: flex-start;
-    &about-image {
-        display: flex;
-    }
 }
+
+#about .text-wrapper {
+    padding: 2em;
+} */
