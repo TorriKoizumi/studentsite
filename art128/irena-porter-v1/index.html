@@ -135,6 +135,8 @@
               <h3 class="section-title">Contact Us</h3>
 
               <form>
+
+                <div class="content">
                   <label for="contact_name">Name:</label>
                   <input type="text" id="contact_name" name="contact_name" />
         
@@ -143,15 +145,19 @@
         
                   <label for="contact_message">Message:</label>
                   <textarea id="contact_message" name="contact_message"></textarea>
-        
+                </div>
+
+                <div class="submit">
                   <input type="submit" value="Submit" class="button-alt"/>
+                </div>
+
                 </form>
 
            <nav class="social-nav">
               <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#" class="icon-social icon-linkedin">Linkedin</a></li>
+                <li><a href="#" class="icon-social icon-facebook">Facebook</a></li>
+                <li><a href="#" class="icon-social icon-instagram">Instagram</a></li>
               </ul>
             </nav>
 
@@ -163,7 +169,9 @@
     <footer class="site-footer">
         <div class="container">
 
-            <nav class="site-nav">
+          <div class="row">
+            <div class="column one-third">
+              <nav class="site-nav">
                 <ul>
                   <li><a class="scroll" href="#about">about</a></li>
                   <li><a class="scroll" href="#testimonials">testimonials</a></li>
@@ -171,21 +179,27 @@
                   <li><a class="scroll" href="#contact">contact</a></li>
                 </ul>
             </nav>
+            </div>
+            
+            <div class="column one-third">
+              <nav class="social-nav">
+                <ul>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                </ul>
+              </nav>
+            </div>
 
-            <nav class="social-nav">
-              <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Newsletter</a></li>
-              </ul>
-            </nav>
-
-            <nav class="site-nav">
-              <ul>
-                <li><a class="scroll" href="#top">back to top^</a></li>
-              </ul>
-            </nav>
+            <div class="column one-third">
+              <nav class="site-nav">
+                <ul>
+                  <li><a class="scroll" href="#top">back to top^</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
         </div>
     </footer>

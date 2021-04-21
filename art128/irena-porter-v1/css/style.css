@@ -445,6 +445,8 @@ article p:first-of-type {
 form {
     max-width: 600px;
     margin: 2em auto;
+    display: flex;
+    justify-content:space-between;
 }
 
 form label,
@@ -508,6 +510,7 @@ form input[type="submit"] {
 .hero-image {
     display: block;
     margin: 0 auto;
+    max-width: 60%;
 }
 
 .grid-hero .big-header {
@@ -560,3 +563,68 @@ form input[type="submit"] {
 #about .text-wrapper {
     padding: 2em;
 } */
+
+
+/* footer */
+
+.site-footer .column {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.site-footer a {
+    padding: 1em;
+    display: block;
+}
+
+/* SOCIAL NAV ICONS */
+
+.social-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-nav a{
+    padding: 1em;
+    margin: 0.5em;
+    display: block;
+}
+
+.social-nav a.icon-social{
+    width: 80px;
+    height: 0;
+    padding: 0;
+    padding-top: 80px;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.social-nav .icon-linkedin {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png);
+}
+
+.social-nav .icon-facebook {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png);
+}
+
+.social-nav .icon-instagram {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png);
+}
+
+/* SERVICES */
+
+#services .container{
+    margin: auto;
+    width: 50%;
+}
