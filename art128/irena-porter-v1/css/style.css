@@ -106,14 +106,14 @@ img{
 
 
 .site-id {
-    background-color: plum;
+    /* background-color: plum; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .trophy-icon{
-    background-color: pink;
+    /* background-color: pink; */
     margin: 0 auto;
     max-width: 36%;
     max-height: 10vh;
