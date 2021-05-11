@@ -104,8 +104,19 @@ img{
     height: auto;
 }
 
+
+.site-id {
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .trophy-icon{
+    background-color: pink;
+    margin: 0 auto;
     max-width: 36%;
+    max-height: 10vh;
 }
 
 /* BUTTONS */
@@ -372,7 +383,7 @@ section{
         text-align: center;
     }
     .toggle-nav .site-nav a:hover{
-        background-color: rgba(0,0,180,1);
+        background-color: #519872;
         color: white;
     }
     .toggle-nav[data-navstate="closed"] ul {
@@ -444,9 +455,8 @@ article p:first-of-type {
 
 form {
     max-width: 600px;
-    margin: 2em auto;
-    display: flex;
-    justify-content:space-between;
+    /* margin: 2em auto; */
+    width: 100%;
 }
 
 form label,
@@ -511,6 +521,7 @@ form input[type="submit"] {
     display: block;
     margin: 0 auto;
     max-width: 60%;
+    max-height: 78vh;
 }
 
 .grid-hero .big-header {
@@ -518,6 +529,10 @@ form input[type="submit"] {
     top: 0;
     left: 0;
     margin: 0;
+    font-size: clamp(3.375em, 6vw, 7em);
+    line-height: 1;
+    padding-bottom: 2em;
+    opacity: 100%;
 }
 
 .grid-hero .small-header {
@@ -525,6 +540,8 @@ form input[type="submit"] {
     top: 10%;
     left: 10%;
     margin: 0;
+    font-size: clamp(2em, 5vw, 3.375em);
+    font-weight: normal;
 }
 
 .grid-hero .button {
@@ -534,6 +551,11 @@ form input[type="submit"] {
     margin: 0;
 }
 
+@media (min-width:768px){
+    .grid-hero .big-header .small-header .button{
+        align-items: center;
+    }
+}
 /* Testimonials */
 
 .circle-box{
@@ -548,6 +570,12 @@ form input[type="submit"] {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
+
+}
+
+#testimonials .button {
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -625,6 +653,25 @@ form input[type="submit"] {
 /* SERVICES */
 
 #services .container{
-    margin: auto;
-    width: 50%;
+    text-align: center;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+/* Contact section */
+@media (min-width:768px){
+    .parent-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+#contact .social-nav {
+    margin: 0 2em;
+}
+
+#contact input[type="submit"] {
+    margin-left: auto;
+    display: block;
 }
